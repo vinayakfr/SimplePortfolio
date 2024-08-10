@@ -1,0 +1,53 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SimplePortfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <h1 class="heading">SimplePortfolio</h1>
+      <div>
+        <a class="text1" href="">Home</a>
+        <a class="text1" href="">About</a>
+        <a class="text1" href="">Contact</a>
+      </div>
+    </nav>
+  </body>
+</html>
+<style>
+    .navbar {
+        background-color: rgb(250, 191, 83);
+        width: screen;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .heading {
+        color: black;
+        font-size: 24px;
+        margin: 0;
+    }
+
+    .navbar div {
+        display: flex;
+        gap: 20px; 
+    }
+
+    .navbar a {
+        text-decoration: none;
+        color: #333;
+        font-size: 18px;
+        transition: color 0.3s ease;
+    }
+
+    .navbar a:hover {
+        text-decoration: underline;
+    }
+
+</style>
