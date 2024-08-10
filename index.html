@@ -15,39 +15,95 @@
         <a class="text1" href="">Contact</a>
       </div>
     </nav>
+    <div class="hero">
+      <div class="hero-box">
+        <div class="hero-part1"></div>
+        <div class="hero-part2">
+          <div class="info">
+            <img src="" alt="" />
+            <h1>Vinayak Srivastava</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+              magni similique, consequuntur numquam adipisci impedit ut deleniti
+              minus perspiciatis necessitatibus?
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
+
 <style>
-    .navbar {
-        background-color: rgb(250, 191, 83);
-        width: screen;
-        padding: 10px 20px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
+  .navbar {
+    background-color: rgb(250, 191, 83);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
 
-    .heading {
-        color: black;
-        font-size: 24px;
-        margin: 0;
-    }
+  .heading {
+    color: black;
+    font-size: 24px;
+    margin: 0;
+  }
 
-    .navbar div {
-        display: flex;
-        gap: 20px; 
-    }
+  .navbar div {
+    display: flex;
+    gap: 20px;
+  }
 
-    .navbar a {
-        text-decoration: none;
-        color: #333;
-        font-size: 18px;
-        transition: color 0.3s ease;
-    }
+  .navbar a {
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+    transition: color 0.3s ease;
+  }
 
-    .navbar a:hover {
-        text-decoration: underline;
-    }
+  .navbar a:hover {
+    text-decoration: underline;
+  }
 
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh; /* Takes up 80% of the viewport height */
+  }
+
+  .hero-box {
+    height: 90%;
+    width: 90%;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .hero-part1 {
+    background-color: black;
+    width: 50%;
+  }
+
+  .hero-part2 {
+    background-color: orange;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .info {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .info h1 {
+    text-align: center;
+  }
+
+  .info p {
+    text-align: center;
+  }
 </style>
