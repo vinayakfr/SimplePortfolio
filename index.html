@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
 
-  <body>
+  <body class="main">
     <nav class="navbar">
       <h1 class="heading">SimplePortfolio</h1>
       <div>
@@ -27,25 +27,38 @@
               magni similique, consequuntur numquam adipisci impedit ut deleniti
               minus perspiciatis necessitatibus?
             </p>
+            <div class="connect">
+              <button class="button">Connect</button>
+              <button class="button">Connect</button>
+            </div>
           </div>
         </div>
       </div>
     </div>
+    <footer class="footer"></footer>
   </body>
 </html>
 
 <style>
+  .main {
+    background-color: #0d0125;
+  }
+
   .navbar {
-    background-color: rgb(250, 191, 83);
+    background-color: #e1e1f3;
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
   }
 
   .heading {
-    color: black;
+    color: #0d1d25;
     font-size: 24px;
     margin: 0;
   }
@@ -76,18 +89,37 @@
   .hero-box {
     height: 90%;
     width: 90%;
-    background-color: black;
     display: flex;
     justify-content: space-between;
   }
 
   .hero-part1 {
-    background-color: black;
+    background-color: #104c64;
     width: 50%;
   }
 
+  .connect {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .button {
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 12px;
+  }
+
+  .button:hover {
+    background-color: black;
+    color: aliceblue;
+    transition: 250ms;
+  }
+
   .hero-part2 {
-    background-color: orange;
+    background-color: #c0754d;
     width: 50%;
     display: flex;
     align-items: center;
@@ -97,6 +129,7 @@
   .info {
     align-items: center;
     justify-content: center;
+    padding: 20px;
   }
 
   .info h1 {
@@ -105,5 +138,12 @@
 
   .info p {
     text-align: center;
+  }
+
+  .footer {
+    width: 100%;
+    background-color: #b6410f;
+    height: 60px;
+    box-shadow: 0 5px 6px rgba(0, 0, 0, 0.3);
   }
 </style>
