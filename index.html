@@ -20,7 +20,7 @@
         <div class="hero-part1"></div>
         <div class="hero-part2">
           <div class="info">
-            <img src="" alt="" />
+            <img src="profile.jpg" alt="" class="profile"/>
             <h1>Vinayak Srivastava</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
@@ -29,13 +29,15 @@
             </p>
             <div class="connect">
               <button class="button">Connect</button>
-              <button class="button">Connect</button>
+              <button class="button">Resume</button>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <h1>SimplePortfolio</h1>
+    </footer>
   </body>
 </html>
 
@@ -96,6 +98,40 @@
   .hero-part1 {
     background-color: #104c64;
     width: 50%;
+    border-top-left-radius: 10%;
+  }
+
+  .hero-part2 {
+    background-color: #c0754d;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom-right-radius: 10%;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .profile {
+    height: 15rem;
+    width: 15rem;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .info h1{
+    font-size: 40px;
+    padding-bottom: 0;
+  }
+
+  .info p {
+    padding-top: 0;
+    font-size: 22px;
   }
 
   .connect {
@@ -107,7 +143,7 @@
 
   .button {
     padding: 10px;
-    font-size: 15px;
+    font-size: 17px;
     font-weight: 600;
     border-radius: 12px;
   }
@@ -117,15 +153,6 @@
     color: aliceblue;
     transition: 250ms;
   }
-
-  .hero-part2 {
-    background-color: #c0754d;
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
   .info {
     align-items: center;
     justify-content: center;
@@ -145,5 +172,9 @@
     background-color: #b6410f;
     height: 60px;
     box-shadow: 0 5px 6px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
   }
 </style>
