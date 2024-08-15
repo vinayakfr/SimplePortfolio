@@ -8,16 +8,20 @@
 
   <body class="main">
     <nav class="navbar">
-      <h1 class="heading">SimplePortfolio</h1>
+      <h1>SimplePortfolio</h1>
       <div>
-        <a class="text1" href="">Home</a>
-        <a class="text1" href="">About</a>
-        <a class="text1" href="">Contact</a>
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Contact</a>
       </div>
     </nav>
     <div class="hero">
       <div class="hero-box">
-        <div class="hero-part1"></div>
+        <div class="hero-part1">
+          <h1>Lorem, ipsum.</h1>
+          <div class="card"></div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, a eos mollitia aliquam molestias explicabo ipsum alias ab dicta natus itaque nihil ea, amet laboriosam harum? Quia maxime numquam totam.</p>
+        </div>
         <div class="hero-part2">
           <div class="info">
             <img src="profile.jpg" alt="" class="profile"/>
@@ -43,38 +47,40 @@
 
 <style>
   .main {
-    background-color: #0d0125;
+    background-color: #1f313b;
+    /* background-color: white; */
   }
 
   .navbar {
-    background-color: #e1e1f3;
-    padding: 10px 20px;
+    background-color: #784259;
+    padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.25);
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
   }
-
-  .heading {
-    color: #0d1d25;
-    font-size: 24px;
-    margin: 0;
-  }
-
+  
   .navbar div {
     display: flex;
     gap: 20px;
   }
 
+  .navbar h1{
+    margin: 0;
+    color: antiquewhite;
+    margin-bottom: 0;
+    font-size: 27px;
+  }
+
   .navbar a {
     text-decoration: none;
-    color: #333;
-    font-size: 20px;
-    transition: color 0.3s ease;
+    color: antiquewhite;
+    font-size: 22px;
+    font-weight: 500;
   }
 
   .navbar a:hover {
@@ -85,7 +91,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 80vh; /* Takes up 80% of the viewport height */
+    height: 86vh; /* Takes up 80% of the viewport height */
   }
 
   .hero-box {
@@ -93,21 +99,47 @@
     width: 90%;
     display: flex;
     justify-content: space-between;
+    /* border-top-left-radius: 10%;
+    border-bottom-right-radius: 10%; */
+    box-shadow: -1px -2px 20px 2px rgba(255, 255, 255, 0.5);;
   }
 
   .hero-part1 {
-    background-color: #104c64;
+    background-color: #383852;
     width: 50%;
-    border-top-left-radius: 10%;
+    display: grid;
+    grid-row: 3;
+    grid-column: 1;
+    align-items: center;
+    justify-content: center;
+    /* border-top-left-radius: 10%; */
+  }
+
+  .hero-part1 h1{
+    text-align: center;
+    font-size: 40px;
+  }
+
+  .hero-part1 p{
+    text-align: center;
+    font-size: 20px;
+    margin: 10px;
+  }
+
+  .card {
+    height: 17rem;
+    width: 32rem;
+    background-color: rgba(255, 255, 255, 0.584);
+    border-radius: 16px;
   }
 
   .hero-part2 {
-    background-color: #c0754d;
+    background-color: #d3463f;
     width: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-bottom-right-radius: 10%;
+    /* border-bottom-right-radius: 10%; */
   }
 
   .info {
@@ -127,11 +159,13 @@
   .info h1{
     font-size: 40px;
     padding-bottom: 0;
+    color: #0d1d25;
   }
 
   .info p {
-    padding-top: 0;
+    margin-top: 0;
     font-size: 22px;
+    color: #0d1d25;
   }
 
   .connect {
@@ -142,15 +176,17 @@
   }
 
   .button {
+    background-color: #1F313B;
+    color: #BE4039;
     padding: 10px;
-    font-size: 17px;
+    font-size: 18px;
     font-weight: 600;
     border-radius: 12px;
   }
 
   .button:hover {
-    background-color: black;
-    color: aliceblue;
+    background-color: #BE4039;
+    color: #1F313B;
     transition: 250ms;
   }
   .info {
@@ -169,7 +205,7 @@
 
   .footer {
     width: 100%;
-    background-color: #b6410f;
+    background-color: #A42527;
     height: 60px;
     box-shadow: 0 5px 6px rgba(0, 0, 0, 0.3);
     display: flex;
