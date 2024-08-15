@@ -4,6 +4,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SimplePortfolio</title>
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
 
   <body class="main">
@@ -20,20 +27,31 @@
         <div class="hero-part1">
           <h1>Lorem, ipsum.</h1>
           <div class="card"></div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, a eos mollitia aliquam molestias explicabo ipsum alias ab dicta natus itaque nihil ea, amet laboriosam harum? Quia maxime numquam totam.</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, a
+            eos mollitia aliquam molestias explicabo ipsum alias ab dicta natus
+            itaque nihil ea, amet laboriosam harum? Quia maxime numquam totam.
+          </p>
         </div>
         <div class="hero-part2">
-          <div class="info">
-            <img src="profile.jpg" alt="" class="profile"/>
-            <h1>Vinayak Srivastava</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-              magni similique, consequuntur numquam adipisci impedit ut deleniti
-              minus perspiciatis necessitatibus?
-            </p>
-            <div class="connect">
-              <button class="button">Connect</button>
-              <button class="button">Resume</button>
+          <div class="socials">
+            <i class="fa-brands fa-instagram fa-xl"></i>
+            <i class="fa-brands fa-linkedin fa-xl"></i>
+            <i class="fa-brands fa-github fa-xl"></i>
+          </div>
+          <div>
+            <div class="info">
+              <img src="profile.jpg" alt="" class="profile" />
+              <h1>Vinayak Srivastava</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+                magni similique, consequuntur numquam adipisci impedit ut
+                deleniti minus perspiciatis necessitatibus?
+              </p>
+              <div class="connect">
+                <button class="button">Connect</button>
+                <button class="button">Resume</button>
+              </div>
             </div>
           </div>
         </div>
@@ -63,13 +81,13 @@
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
   }
-  
+
   .navbar div {
     display: flex;
     gap: 20px;
   }
 
-  .navbar h1{
+  .navbar h1 {
     margin: 0;
     color: antiquewhite;
     margin-bottom: 0;
@@ -101,7 +119,7 @@
     justify-content: space-between;
     /* border-top-left-radius: 10%;
     border-bottom-right-radius: 10%; */
-    box-shadow: -1px -2px 20px 2px rgba(255, 255, 255, 0.5);;
+    box-shadow: -1px -2px 20px 2px rgba(255, 255, 255, 0.5);
   }
 
   .hero-part1 {
@@ -115,12 +133,12 @@
     /* border-top-left-radius: 10%; */
   }
 
-  .hero-part1 h1{
+  .hero-part1 h1 {
     text-align: center;
     font-size: 40px;
   }
 
-  .hero-part1 p{
+  .hero-part1 p {
     text-align: center;
     font-size: 20px;
     margin: 10px;
@@ -136,10 +154,20 @@
   .hero-part2 {
     background-color: #d3463f;
     width: 50%;
-    display: flex;
+    display: grid;
+    grid-column: 1;
+    grid-row: 2;
     align-items: center;
     justify-content: center;
     /* border-bottom-right-radius: 10%; */
+  }
+
+  .socials {
+    margin-right: 10px;
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    justify-content: end;
   }
 
   .info {
@@ -156,7 +184,7 @@
     object-fit: cover;
   }
 
-  .info h1{
+  .info h1 {
     font-size: 40px;
     padding-bottom: 0;
     color: #0d1d25;
@@ -176,8 +204,8 @@
   }
 
   .button {
-    background-color: #1F313B;
-    color: #BE4039;
+    background-color: #1f313b;
+    color: #be4039;
     padding: 10px;
     font-size: 18px;
     font-weight: 600;
@@ -185,8 +213,8 @@
   }
 
   .button:hover {
-    background-color: #BE4039;
-    color: #1F313B;
+    background-color: #be4039;
+    color: #1f313b;
     transition: 250ms;
   }
   .info {
@@ -205,7 +233,7 @@
 
   .footer {
     width: 100%;
-    background-color: #A42527;
+    background-color: #a42527;
     height: 60px;
     box-shadow: 0 5px 6px rgba(0, 0, 0, 0.3);
     display: flex;
