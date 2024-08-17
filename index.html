@@ -2,10 +2,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Portfolios for grab">
-    <meta name="keywords" content="portfolio-website, html, css, javascript">
-    <meta name="author" content="Vinayak Srivastava">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolios for grab" />
+    <meta name="keywords" content="portfolio-website, html, css, javascript" />
+    <meta name="author" content="Vinayak Srivastava" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NoCluePortfolio</title>
     <link rel="icons" href="" />
     <link
@@ -51,31 +51,33 @@
           </div>
         </div>
         <div class="hero-part1">
-          <div class="skill-tray">
-            <div class="skill-box">
-              <p class="skill">Python</p>
+          <div class="skills">
+            <div class="skill-tray">
+              <div class="skill-box">
+                <p class="skill">Python</p>
+              </div>
+              <div class="skill-box">
+                <p class="skill">JavaScript</p>
+              </div>
             </div>
-            <div class="skill-box">
-              <p class="skill">Python</p>
+            <div class="skill-tray">
+              <div class="skill-box">
+                <p class="skill">TypeScript</p>
+              </div>
+              <div class="skill-box" style="background-color: snow;">
+                <p class="skill">Music</p>
+              </div>
+              <div class="skill-box">
+                <p class="skill">Java</p>
+              </div>
             </div>
-          </div>
-          <div class="skill-tray">
-            <div class="skill-box">
-              <p class="skill">Python</p>
-            </div>
-            <div class="skill-box">
-              <p class="skill">Python</p>
-            </div>
-            <div class="skill-box">
-              <p class="skill">Python</p>
-            </div>
-          </div>
-          <div class="skill-tray">
-            <div class="skill-box">
-              <p class="skill">Python</p>
-            </div>
-            <div class="skill-box">
-              <p class="skill">Python</p>
+            <div class="skill-tray">
+              <div class="skill-box">
+                <p class="skill">C++</p>
+              </div>
+              <div class="skill-box">
+                <p class="skill">React</p>
+              </div>
             </div>
           </div>
         </div>
@@ -179,6 +181,18 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    animation: rotate 8s linear;
+  }
+
+  .skills {
+    animation: rotate 8s linear infinite;
+  }
+
+  .skill {
+    font-size: 20px;
+    font-weight: 500;
+    animation: counter-rotate 8s linear infinite;
+    
   }
 
   .card {
@@ -358,4 +372,23 @@
       box-shadow: 1px 2px 25px 2px rgba(245, 110, 15, 0.2);
     }
   }
+
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes counter-rotate {
+    0% {
+      transform: rotate(360deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+
 </style>
