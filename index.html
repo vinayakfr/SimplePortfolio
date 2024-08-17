@@ -13,7 +13,7 @@
     />
   </head>
 
-  <body class="main">
+  <body class="main" style="background-color: #151419">
     <nav class="navbar">
       <h1>SimplePortfolio</h1>
       <div>
@@ -24,20 +24,6 @@
     </nav>
     <div class="hero">
       <div class="hero-box">
-        <div class="hero-part1">
-          <h1>Lorem, ipsum.</h1>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
-          <div class="card"></div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
-            labore autem culpa in, nisi assumenda.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, a
-            eos mollitia aliquam molestias explicabo ipsum alias ab dicta natus
-            itaque nihil ea, amet laboriosam harum? Quia maxime numquam totam.
-          </p>
-        </div>
         <div class="hero-part2">
           <div class="socials">
             <a class="icons" href=""
@@ -66,6 +52,20 @@
             </div>
           </div>
         </div>
+        <div class="hero-part1">
+          <h1>Lorem, ipsum.</h1>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+          <!-- <div class="card"></div> -->
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+            labore autem culpa in, nisi assumenda.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, a
+            eos mollitia aliquam molestias explicabo ipsum alias ab dicta natus
+            itaque nihil ea, amet laboriosam harum? Quia maxime numquam totam.
+          </p>
+        </div>
       </div>
     </div>
     <footer class="footer">
@@ -77,7 +77,6 @@
 <style>
   .main {
     background-color: #151419;
-    /* background-color: white; */
   }
 
   .navbar {
@@ -130,7 +129,6 @@
     width: 90%;
     display: flex;
     justify-content: space-between;
-    box-shadow: -1px -2px 20px 2px rgba(255, 255, 255, 0.2);
   }
 
   .hero-part1 {
@@ -248,7 +246,6 @@
   }
 
   .footer {
-    width: 100%;
     background-color: #262626;
     height: 60px;
     box-shadow: 0 5px 6px rgba(0, 0, 0, 0.3);
@@ -256,5 +253,38 @@
     align-items: center;
     justify-content: end;
     color: white;
+    padding-right: 10px;
+  }
+
+  @media screen and (min-width: 320px) {
+    .hero {
+      height: auto;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+    .hero-box {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .hero-part1 {
+      width: 100%;
+    }
+
+    .hero-part2 {
+      width: 100%;
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    .hero {
+      height: 85vh;
+    }
+
+    .hero-box {
+      display: flex;
+      flex-direction: row;
+      box-shadow: 1px 2px 25px 2px rgba(245, 110, 15, 0.2);
+    }
   }
 </style>
