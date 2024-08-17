@@ -26,7 +26,12 @@
       <div class="hero-box">
         <div class="hero-part1">
           <h1>Lorem, ipsum.</h1>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
           <div class="card"></div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+            labore autem culpa in, nisi assumenda.
+          </p>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, a
             eos mollitia aliquam molestias explicabo ipsum alias ab dicta natus
@@ -35,9 +40,15 @@
         </div>
         <div class="hero-part2">
           <div class="socials">
-            <i class="fa-brands fa-instagram fa-xl"></i>
-            <i class="fa-brands fa-linkedin fa-xl"></i>
-            <i class="fa-brands fa-github fa-xl"></i>
+            <a class="icons" href=""
+              ><i class="fa-brands fa-instagram fa-xl"></i
+            ></a>
+            <a class="icons" href=""
+              ><i class="fa-brands fa-linkedin fa-xl"></i
+            ></a>
+            <a class="icons" href=""
+              ><i class="fa-brands fa-github fa-xl"></i></a
+            >,
           </div>
           <div>
             <div class="info">
@@ -65,12 +76,12 @@
 
 <style>
   .main {
-    background-color: #1f313b;
+    background-color: #151419;
     /* background-color: white; */
   }
 
   .navbar {
-    background-color: #784259;
+    background-color: #f56e0f;
     padding: 10px;
     display: flex;
     justify-content: space-between;
@@ -89,27 +100,29 @@
 
   .navbar h1 {
     margin: 0;
-    color: antiquewhite;
+    color: #1b1b1e;
     margin-bottom: 0;
     font-size: 27px;
   }
 
   .navbar a {
     text-decoration: none;
-    color: antiquewhite;
+    color: #1b1b1e;
     font-size: 22px;
     font-weight: 500;
   }
 
   .navbar a:hover {
     text-decoration: underline;
+    color: snow;
+    transition: 200ms;
   }
 
   .hero {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 86vh; /* Takes up 80% of the viewport height */
+    height: 85vh;
   }
 
   .hero-box {
@@ -117,49 +130,48 @@
     width: 90%;
     display: flex;
     justify-content: space-between;
-    /* border-top-left-radius: 10%;
-    border-bottom-right-radius: 10%; */
-    box-shadow: -1px -2px 20px 2px rgba(255, 255, 255, 0.5);
+    box-shadow: -1px -2px 20px 2px rgba(255, 255, 255, 0.2);
   }
 
   .hero-part1 {
-    background-color: #383852;
+    background-color: #1b1b1e;
     width: 50%;
-    display: grid;
-    grid-row: 3;
-    grid-column: 1;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* border-top-left-radius: 10%; */
   }
 
   .hero-part1 h1 {
     text-align: center;
     font-size: 40px;
+    color: snow;
+    margin-bottom: 0;
   }
 
   .hero-part1 p {
     text-align: center;
     font-size: 20px;
     margin: 10px;
+    color: snow;
   }
 
   .card {
     height: 17rem;
     width: 32rem;
-    background-color: rgba(255, 255, 255, 0.584);
+    background-color: #878787;
     border-radius: 16px;
+    margin: 0 auto;
   }
 
   .hero-part2 {
-    background-color: #d3463f;
+    background-color: #262626;
     width: 50%;
     display: grid;
     grid-column: 1;
     grid-row: 2;
     align-items: center;
     justify-content: center;
-    /* border-bottom-right-radius: 10%; */
   }
 
   .socials {
@@ -187,13 +199,13 @@
   .info h1 {
     font-size: 40px;
     padding-bottom: 0;
-    color: #0d1d25;
+    color: snow;
   }
 
   .info p {
     margin-top: 0;
     font-size: 22px;
-    color: #0d1d25;
+    color: snow;
   }
 
   .connect {
@@ -204,16 +216,20 @@
   }
 
   .button {
-    background-color: #1f313b;
-    color: #be4039;
+    background-color: #151419;
+    color: #f56e0f;
     padding: 10px;
     font-size: 18px;
     font-weight: 600;
     border-radius: 12px;
   }
 
+  .icons {
+    color: f56e0f;
+  }
+
   .button:hover {
-    background-color: #be4039;
+    background-color: #f56e0f;
     color: #1f313b;
     transition: 250ms;
   }
@@ -233,7 +249,7 @@
 
   .footer {
     width: 100%;
-    background-color: #a42527;
+    background-color: #262626;
     height: 60px;
     box-shadow: 0 5px 6px rgba(0, 0, 0, 0.3);
     display: flex;
